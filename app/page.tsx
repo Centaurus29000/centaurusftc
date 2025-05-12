@@ -26,16 +26,16 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link href="/sponsorship">
-                  <Button variant="outline" className="text-white border-white hover:bg-white/10">
+                  <Button variant="outline" className="text-black border-white hover:bg-white/90">
                     Become a Sponsor
                   </Button>
                 </Link>
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px]">
+              <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
                 <Image
-                  src="/placeholder.svg?height=500&width=500"
+                  src="/ChironBot.png"
                   alt="Centaurus Robot"
                   fill
                   className="object-cover rounded-lg"
@@ -112,35 +112,55 @@ export default function Home() {
             </div>
           </div>
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="group relative overflow-hidden rounded-lg border border-gray-800">
-                <div className="aspect-video overflow-hidden">
-                  <Image
-                    src={`/placeholder.svg?height=200&width=300`}
-                    alt={`News ${i}`}
-                    width={300}
-                    height={200}
-                    className="object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="text-xl font-bold">Regional Competition Success</h3>
-                  <p className="text-sm text-gray-400 mt-2">
-                    Our team placed in the top 5 at the regional competition, qualifying for nationals.
-                  </p>
-                  <div className="mt-4 flex items-center text-sm text-[#7500ff]">
-                    <FileText className="mr-1 h-4 w-4" />
-                    <Link href="/blog" className="hover:underline">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+  {[
+    {
+      title: "Nationals Success",
+      description:
+        "Our former team achieved national success by achieving the 1st place connect award due to our industrial outreach.",
+      image: "/NAward.png",
+      link: "/blog/regional-victory",
+    },
+    {
+      title: "Women in STEM Club",
+      description:
+        "We host a STEM club for local female students, inspiring the next generation of woman to get into areas of STEM.",
+      image: "/WISPlaceholder.png",
+      link: "/blog/stem-workshop",
+    },
+    {
+      title: "2024 Robot Explanation",
+      description:
+        "Join us on a deep dive into our 2024 robot, Into The Deep. Learn about its design, features, and capabilities.",
+      image: "/ITDBot.png",
+      link: "/blog/new-robot",
+    },
+  ].map((article, i) => (
+    <div key={i} className="group relative overflow-hidden rounded-lg border border-gray-800 bg-[#1a1a1a]">
+      <div className="aspect-video overflow-hidden flex items-center justify-center">
+  <Image
+    src={article.image}
+    alt={article.title}
+    width={300}
+    height={150}
+    className="object-cover transition-transform group-hover:scale-105"
+  />
+</div>
+      <div className="p-4">
+        <h3 className="text-xl font-bold text-white">{article.title}</h3>
+        <p className="text-sm text-white mt-2">{article.description}</p>
+        <div className="mt-4 flex items-center text-sm text-[#7500ff]">
+          <FileText className="mr-1 h-4 w-4" />
+          <Link href={article.link} className="hover:underline">
+            Read more
+          </Link>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
           <div className="flex justify-center">
             <Link href="/blog">
-              <Button variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button variant="outline" className="border-white text-black hover:bg-white/90">
                 View All Posts
               </Button>
             </Link>
@@ -167,3 +187,4 @@ export default function Home() {
     </div>
   )
 }
+
