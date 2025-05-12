@@ -15,7 +15,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           {/* Replace the Robot icon with your logo */}
           <Image
-            src="/logo.png" // Replace with the path to your logo
+            src="/Logo.png" // Replace with the path to your logo
             alt="Centaurus Logo"
             width={32} // Adjust the width as needed
             height={32} // Adjust the height as needed
