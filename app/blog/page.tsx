@@ -44,7 +44,7 @@ export default function BlogPage() {
     },
     {
       id: 5,
-      title: "Raising Money for the charity 'Oceana'",
+      title: "Raising Money for charity 'Oceana'",
       excerpt: "Our outreach team sold 3D printed items and fundraised AU$250 for the charity Oceana.",
       date: "October 24, 2024",
       readTime: "7 min read",
