@@ -26,6 +26,7 @@ export default function SponsorshipPage() {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Why Sponsor Section */}
