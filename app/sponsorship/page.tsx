@@ -19,7 +19,7 @@ export default function SponsorshipPage() {
                 <Button className="bg-[#7500ff] hover:bg-[#7500ff]/90">View Sponsorship Tiers</Button>
               </Link>
               <Link href="#contact">
-                <Button variant="outline" className="text-white border-purple hover:bg-purple/10">
+                <Button variant="outline" className="text-white border-white hover:bg-purple/10">
                   Contact Us
                 </Button>
               </Link>
