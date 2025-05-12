@@ -48,44 +48,7 @@ export default function TeamPage() {
         </div>
       </section>
 
-      {/* Team Members Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter">Our Team Members</h2>
-            <p className="max-w-[700px] text-gray-500 md:text-lg/relaxed">
-              Meet the talented individuals who make up Team Centaurus.
-            </p>
-          </div>
-
-          {/* Team Categories */}
-          <div className="mt-12 space-y-16">
-            {/* Leadership */}
-            <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-center">Leadership</h3>
-              <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-center">
-                {[...Array(4)].map((_, i) => (
-                  <div key={i} className="flex flex-col items-center space-y-2">
-                    <div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-gray-200">
-                      <Image
-                        src={`/placeholder.svg?height=128&width=128`}
-                        alt={`Member ${i + 1}`}
-                        width={128}
-                        height={128}
-                        className="object-cover"
-                      />
-                    </div>
-                    <h4 className="text-xl font-bold">Member {i + 1}</h4>
-                    <p className="text-sm text-[#7500ff] font-medium">Role</p>
-                    <p className="text-sm text-gray-500 text-center">Description</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* Team Members Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
         <div className="container px-4 md:px-6">
