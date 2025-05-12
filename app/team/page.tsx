@@ -23,9 +23,9 @@ export default function TeamPage() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
               <p className="text-gray-500 md:text-lg/relaxed">
-                Team Centaurus was founded in 2015 with a mission to inspire students to pursue STEM fields through
-                competitive robotics. What started as a small group of enthusiastic students has grown into a formidable
-                team with multiple regional championships.
+                Team Centaurus was founded in 2025 with a mission to inspire students to pursue STEM fields through
+                competitive robotics. We are a group of dedicated students determined to further the field of what 
+                is possible in the FIRST Tech Challenge and inspire a new generation of innovators.
               </p>
               <p className="text-gray-500 md:text-lg/relaxed">
                 Our team members develop skills in mechanical engineering, programming, electrical engineering, CAD
@@ -73,10 +73,10 @@ export default function TeamPage() {
                         className="object-cover"
                       />
                     </div>
-                    <h4 className="text-xl font-bold">Alex Johnson</h4>
+                    <h4 className="text-xl font-bold">Bilal Chaudhary</h4>
                     <p className="text-sm text-[#7500ff] font-medium">Team Captain</p>
                     <p className="text-sm text-gray-500 text-center">
-                      Senior, 3rd year on the team. Specializes in programming and strategy.
+                      3rd year FTC student. Specializes in CADing and hardware.
                     </p>
                   </div>
                 ))}
@@ -97,10 +97,10 @@ export default function TeamPage() {
                         className="object-cover"
                       />
                     </div>
-                    <h4 className="text-xl font-bold">Sam Rivera</h4>
+                    <h4 className="text-xl font-bold">Bhavy Garg</h4>
                     <p className="text-sm text-[#7500ff] font-medium">Mechanical Lead</p>
                     <p className="text-sm text-gray-500 text-center">
-                      Junior, 2nd year on the team. Expert in CAD and mechanical design.
+                      4th year FTC student. Expert in CAD and mechanical design.
                     </p>
                   </div>
                 ))}
@@ -121,10 +121,10 @@ export default function TeamPage() {
                         className="object-cover"
                       />
                     </div>
-                    <h4 className="text-xl font-bold">Dr. Emily Chen</h4>
-                    <p className="text-sm text-[#7500ff] font-medium">Lead Coach</p>
+                    <h4 className="text-xl font-bold">Joshua Waghorn</h4>
+                    <p className="text-sm text-[#7500ff] font-medium">Mentor</p>
                     <p className="text-sm text-gray-500 text-center">
-                      Physics teacher with 10+ years of robotics coaching experience.
+                      Dedicated engineer and former captain of Theseus Robotics.
                     </p>
                   </div>
                 ))}
