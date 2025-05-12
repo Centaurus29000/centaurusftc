@@ -5,7 +5,7 @@ export default function TeamPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-900 text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Meet Team Centaurus</h1>
@@ -17,7 +17,7 @@ export default function TeamPage() {
       </section>
 
       {/* Team Story Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4">
@@ -48,7 +48,7 @@ export default function TeamPage() {
       </section>
 
       {/* Team Members Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-50">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Our Team Members</h2>
@@ -58,7 +58,7 @@ export default function TeamPage() {
           </div>
 
           {/* Team Categories */}
-          <div className="mt-12 space-y-16">
+          <div className="min-h-[calc(100vh-4rem)] flex items-center">
             {/* Leadership */}
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-center">Leadership</h3>
@@ -135,7 +135,7 @@ export default function TeamPage() {
       </section>
 
       {/* Achievements Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-900 text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Our Achievements</h2>

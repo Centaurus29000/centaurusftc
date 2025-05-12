@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black">
+      <section className="relative w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-900">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-            <div className="flex flex-col justify-center space-y-4">
+            <div className="flex flex-col justify-center space-y-4 pl-8 md:pl-16">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl xl:text-6xl/none">
                   CENTAURUS <span className="text-[#7500ff]">ROBOTICS</span>
@@ -21,12 +21,12 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/team">
-                  <Button className="bg-[#7500ff] hover:bg-[#7500ff]/90">
+                  <Button className="bg-[#7500ff] hover:bg-[#7500ff]/90 shadow-lg border border-transparent active:translate-y-[2px] transition-transform">
                     Meet Our Team <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
                 <Link href="/sponsorship">
-                  <Button variant="outline" className="text-white border-white hover:bg-white/10">
+                  <Button className="bg-white text-black hover:bg-gray-200 shadow-lg border border-gray-300 active:translate-y-[2px] transition-transform">
                     Become a Sponsor
                   </Button>
                 </Link>
@@ -101,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* Latest News Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-900 text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -140,7 +140,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <Link href="/blog">
-              <Button variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button className="bg-[#7500ff] hover:bg-[#7500ff]/90 shadow-lg border border-transparent active:translate-y-[2px] transition-transform text-white">
                 View All Posts
               </Button>
             </Link>
@@ -159,7 +159,7 @@ export default function Home() {
               </p>
             </div>
             <Link href="/sponsorship">
-              <Button className="bg-white text-[#7500ff] hover:bg-white/90">Become a Sponsor</Button>
+              <Button className="bg-white text-black hover:bg-gray-200 shadow-lg border border-gray-300 active:translate-y-[2px] transition-transform">Become a Sponsor</Button>
             </Link>
           </div>
         </div>

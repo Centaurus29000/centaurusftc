@@ -7,7 +7,7 @@ export default function SponsorshipPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-900 text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Sponsorship Opportunities</h1>
@@ -29,7 +29,7 @@ export default function SponsorshipPage() {
       </section>
 
       {/* Why Sponsor Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4">
@@ -92,9 +92,9 @@ export default function SponsorshipPage() {
       </section>
 
       {/* How Funds Are Used Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-50">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center mb-12">
+          <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">How Your Support Helps</h2>
             <p className="max-w-[700px] text-gray-500 md:text-lg/relaxed">
               Your sponsorship directly impacts our team's ability to compete, learn, and grow.
@@ -157,9 +157,9 @@ export default function SponsorshipPage() {
       </section>
 
       {/* Sponsorship Tiers Section */}
-      <section id="sponsorship-tiers" className="w-full py-12 md:py-24 lg:py-32">
+      <section id="sponsorship-tiers" className="w-full min-h-[calc(100vh-4rem)] flex items-center">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center mb-12">
+          <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Sponsorship Tiers</h2>
             <p className="max-w-[700px] text-gray-500 md:text-lg/relaxed">
               We offer various sponsorship levels to fit different budgets and partnership goals.
@@ -262,16 +262,23 @@ export default function SponsorshipPage() {
             </div>
           </div>
 
-          <div className="mt-12 p-6 bg-gray-50 rounded-lg border border-gray-200">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              <div>
-                <h3 className="text-xl font-bold">Platinum Sponsor - $5,000+</h3>
-                <p className="text-gray-500">
-                  For our premium sponsors, we offer custom partnership packages with maximum visibility and engagement.
-                </p>
+          <div className="flex items-center justify-center">
+            <div className="relative w-full max-w-3xl h-[300px]">
+              <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-bold">Platinum Sponsor - $5,000+</h3>
+                    <p className="text-gray-500">
+                      For our premium sponsors, we offer custom partnership packages with maximum visibility and engagement.
+                    </p>
+                  </div>
+                  <Link href="#contact">
+                    <Button className="bg-gray-900 hover:bg-gray-900/90 text-white">Contact for Details</Button>
+                  </Link>
+                </div>
               </div>
               <Link href="#contact">
-                <Button className="bg-black hover:bg-black/90 text-white">Contact for Details</Button>
+                <Button className="bg-gray-900 hover:bg-gray-900/90 text-white">Contact for Details</Button>
               </Link>
             </div>
           </div>
@@ -292,9 +299,9 @@ export default function SponsorshipPage() {
       </section>
 
       {/* Current Sponsors Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-50">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center mb-12">
+          <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Our Current Sponsors</h2>
             <p className="max-w-[700px] text-gray-500 md:text-lg/relaxed">
               We're grateful for the support of these organizations who make our work possible.
@@ -321,7 +328,7 @@ export default function SponsorshipPage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section id="contact" className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-900 text-white">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4">
@@ -344,7 +351,7 @@ export default function SponsorshipPage() {
                   <input
                     id="name"
                     type="text"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-black border-gray-700"
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-gray-900 border-gray-700"
                   />
                 </div>
                 <div className="grid gap-2">
@@ -354,7 +361,7 @@ export default function SponsorshipPage() {
                   <input
                     id="contact"
                     type="text"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-black border-gray-700"
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-gray-900 border-gray-700"
                   />
                 </div>
                 <div className="grid gap-2">
@@ -364,7 +371,7 @@ export default function SponsorshipPage() {
                   <input
                     id="email"
                     type="email"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-black border-gray-700"
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-gray-900 border-gray-700"
                   />
                 </div>
                 <div className="grid gap-2">
@@ -373,7 +380,7 @@ export default function SponsorshipPage() {
                   </label>
                   <select
                     id="sponsorship"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-black border-gray-700"
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-gray-900 border-gray-700"
                   >
                     <option value="">Select a level</option>
                     <option value="bronze">Bronze ($500+)</option>
@@ -390,7 +397,7 @@ export default function SponsorshipPage() {
                   <textarea
                     id="message"
                     rows={4}
-                    className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-black border-gray-700"
+                    className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-gray-900 border-gray-700"
                   ></textarea>
                 </div>
                 <Button type="submit" className="bg-[#7500ff] hover:bg-[#7500ff]/90">

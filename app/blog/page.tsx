@@ -65,7 +65,7 @@ export default function BlogPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-900 text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Team Blog</h1>
@@ -77,9 +77,9 @@ export default function BlogPage() {
       </section>
 
       {/* Featured Post */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center mb-10">
+          <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Featured Post</h2>
           </div>
 
@@ -129,9 +129,9 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-50">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center mb-10">
+          <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Latest Posts</h2>
             <p className="max-w-[700px] text-gray-500 md:text-lg/relaxed">
               Explore our recent articles, updates, and team stories.
@@ -185,7 +185,7 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#7500ff]">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-[#7500ff]">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
@@ -202,7 +202,7 @@ export default function BlogPage() {
                   placeholder="Enter your email"
                   className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 />
-                <Button type="submit" className="bg-black text-white hover:bg-black/90">
+                <Button type="submit" className="bg-gray-900 text-white hover:bg-gray-900/90">
                   Subscribe
                 </Button>
               </form>

@@ -7,7 +7,7 @@ export default function RobotsPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-900 text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Robots</h1>
@@ -19,9 +19,9 @@ export default function RobotsPage() {
       </section>
 
       {/* Current Robot Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center mb-12">
+          <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Current Robot: Nebula</h2>
             <p className="max-w-[700px] text-gray-500 md:text-lg/relaxed">
               Our 2023-2024 competition robot designed for the CENTERSTAGE℠ challenge.
@@ -99,9 +99,9 @@ export default function RobotsPage() {
       </section>
 
       {/* Past Robots Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-50">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center mb-12">
+          <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Past Robots</h2>
             <p className="max-w-[700px] text-gray-500 md:text-lg/relaxed">
               A look back at our previous competition robots and their achievements.
@@ -185,7 +185,7 @@ export default function RobotsPage() {
       </section>
 
       {/* Technical Details Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
+      <section className="w-full min-h-[calc(100vh-4rem)] flex items-center bg-gray-900 text-white">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4">
