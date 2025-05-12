@@ -139,7 +139,7 @@ export default function SponsorshipPage() {
           <div className="mt-12 flex justify-center">
             <div className="relative w-full max-w-3xl h-[300px]">
               <Image
-                src="/budget.png?height=300&width=800"
+                src="/budget2.png?height=300&width=800"
                 alt="Budget allocation chart"
                 fill
                 className="object-contain"
