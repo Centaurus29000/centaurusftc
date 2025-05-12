@@ -297,7 +297,6 @@ export default function SponsorshipPage() {
               We're grateful for the support of these organizations who make our work possible.
             </p>
           </div>
-          </div>
         </div>
       </section>
 
