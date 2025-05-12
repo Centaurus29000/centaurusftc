@@ -78,7 +78,7 @@ export default function BlogPage() {
             <div className="flex items-center justify-center">
               <div className="relative w-full h-[300px] md:h-[400px]">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/regionals.jpg?height=400&width=600"
                   alt="Featured post"
                   fill
                   className="object-cover rounded-lg"
