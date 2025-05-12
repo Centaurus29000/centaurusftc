@@ -16,10 +16,10 @@ export default function SponsorshipPage() {
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link href="#sponsorship-tiers">
-                <Button className="bg-[#7500ff] hover:bg-[#000000]/90">View Sponsorship Tiers</Button>
+                <Button className="bg-[#7500ff] hover:bg-[#7500ff]/90">View Sponsorship Tiers</Button>
               </Link>
               <Link href="#contact">
-                <Button variant="outline" className="text-white border-white hover:bg-white/10">
+                <Button variant="outline" className="text-purple border-purple hover:bg-purple/10">
                   Contact Us
                 </Button>
               </Link>
