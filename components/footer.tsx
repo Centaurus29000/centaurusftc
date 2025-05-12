@@ -45,15 +45,15 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-sm text-gray-400">
                 <Mail className="h-4 w-4 text-[#7500ff]" />
-                <span>contact@centaurusrobotics.com</span>
+                <span>centaurus29000@outlook.com</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-gray-400">
                 <Phone className="h-4 w-4 text-[#7500ff]" />
-                <span>(123) 456-7890</span>
+                <span>+61 481 429 050</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-gray-400">
                 <MapPin className="h-4 w-4 text-[#7500ff]" />
-                <span>Centaurus High School, Lafayette, CO</span>
+                <span>Brisbane, Queensland, Australia</span>
               </li>
             </ul>
           </div>
