@@ -23,9 +23,9 @@ export default function TeamPage() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
               <p className="text-gray-500 md:text-lg/relaxed">
-                Team Centaurus was founded in 2025 with a mission to inspire students to pursue STEM fields through
-                competitive robotics. We are a group of dedicated students determined to further the field of what 
-                is possible in the FIRST Tech Challenge and inspire a new generation of innovators.
+                Team Centaurus was founded in 2015 with a mission to inspire students to pursue STEM fields through
+                competitive robotics. What started as a small group of enthusiastic students has grown into a formidable
+                team with multiple regional championships.
               </p>
               <p className="text-gray-500 md:text-lg/relaxed">
                 Our team members develop skills in mechanical engineering, programming, electrical engineering, CAD
@@ -62,46 +62,79 @@ export default function TeamPage() {
             {/* Leadership */}
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-center">Leadership</h3>
-              <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                {[1, 2, 3, 4].map((i) => (
+              <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-center">
+                {[
+                  {
+                    name: "Bilal Chaudhary",
+                    role: "Team Captain",
+                    description: "3rd year FTC student. Leads design and team management.",
+                  },
+                  {
+                    name: "Bhavy Garg",
+                    role: "Mechanical Lead",
+                    description: "4th year FTC student. Specializes in CAD and design.",
+                  },
+                  {
+                    name: "Stas Fetisov",
+                    role: "Lead Programmer",
+                    description: "2nd year FTC student. Expert in Java and control systems.",
+                  },
+                  {
+                    name: "Disath Peduruhewa",
+                    role: "Lead Outreach",
+                    description: "3rd year FIRST student. Focuses on community events and outreach.",
+                  },
+                ].map((member, i) => (
                   <div key={i} className="flex flex-col items-center space-y-2">
-                    <div className="relative w-32 h-32 overflow-hidden rounded-full">
+                    <div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-gray-200">
                       <Image
                         src={`/placeholder.svg?height=128&width=128`}
-                        alt={`Team Member ${i}`}
+                        alt={member.name}
                         fill
                         className="object-cover"
                       />
                     </div>
-                    <h4 className="text-xl font-bold">Bilal Chaudhary</h4>
-                    <p className="text-sm text-[#7500ff] font-medium">Team Captain</p>
-                    <p className="text-sm text-gray-500 text-center">
-                      3rd year FTC student. Specializes in CADing and hardware.
-                    </p>
+                    <h4 className="text-xl font-bold">{member.name}</h4>
+                    <p className="text-sm text-[#7500ff] font-medium">{member.role}</p>
+                    <p className="text-sm text-gray-500 text-center">{member.description}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Engineering */}
+            {/* Team Members */}
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-center">Engineering Team</h3>
-              <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                {[1, 2, 3, 4].map((i) => (
+              <h3 className="text-2xl font-bold text-center">Team Members</h3>
+              <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-center">
+                {[
+                  {
+                    name: "Hugo Lawler",
+                    role: "Hardware Expert",
+                    description: "3rd year FTC student. Specialises in hardware and media design.",
+                  },
+                  {
+                    name: "Nevaan Dias",
+                    role: "Wiring Expert",
+                    description: "FRC alumni, 4th year FIRST student. Expert in wiring and hardware.",
+                  },
+                  {
+                    name: "Layla Chitoni",
+                    role: "Media Expert",
+                    description: "2nd year FTC student, media design expert.",
+                  },
+                ].map((member, i) => (
                   <div key={i} className="flex flex-col items-center space-y-2">
-                    <div className="relative w-32 h-32 overflow-hidden rounded-full">
+                    <div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-gray-200">
                       <Image
                         src={`/placeholder.svg?height=128&width=128`}
-                        alt={`Team Member ${i}`}
+                        alt={member.name}
                         fill
                         className="object-cover"
                       />
                     </div>
-                    <h4 className="text-xl font-bold">Bhavy Garg</h4>
-                    <p className="text-sm text-[#7500ff] font-medium">Mechanical Lead</p>
-                    <p className="text-sm text-gray-500 text-center">
-                      4th year FTC student. Expert in CAD and mechanical design.
-                    </p>
+                    <h4 className="text-xl font-bold">{member.name}</h4>
+                    <p className="text-sm text-[#7500ff] font-medium">{member.role}</p>
+                    <p className="text-sm text-gray-500 text-center">{member.description}</p>
                   </div>
                 ))}
               </div>
@@ -110,110 +143,33 @@ export default function TeamPage() {
             {/* Mentors & Coaches */}
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-center">Mentors & Coaches</h3>
-              <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-                {[1, 2, 3].map((i) => (
+              <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 justify-center items-center">
+                {[
+                  {
+                    name: "Joshua Waghorn",
+                    role: "Mentor",
+                    description: "Alumni from Team Theseus Robotics, specialising in mechanical design.",
+                  },
+                  {
+                    name: "Aadi Shetty",
+                    role: "Mentor",
+                    description: "Alumni from Team Hephaestus, specialising in mechanical design",
+                  },
+                ].map((mentor, i) => (
                   <div key={i} className="flex flex-col items-center space-y-2">
-                    <div className="relative w-32 h-32 overflow-hidden rounded-full">
+                    <div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-gray-200">
                       <Image
                         src={`/placeholder.svg?height=128&width=128`}
-                        alt={`Mentor ${i}`}
+                        alt={mentor.name}
                         fill
                         className="object-cover"
                       />
                     </div>
-                    <h4 className="text-xl font-bold">Joshua Waghorn</h4>
-                    <p className="text-sm text-[#7500ff] font-medium">Mentor</p>
-                    <p className="text-sm text-gray-500 text-center">
-                      Dedicated engineer and former captain of Theseus Robotics.
-                    </p>
+                    <h4 className="text-xl font-bold">{mentor.name}</h4>
+                    <p className="text-sm text-[#7500ff] font-medium">{mentor.role}</p>
+                    <p className="text-sm text-gray-500 text-center">{mentor.description}</p>
                   </div>
                 ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Achievements Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter">Our Achievements</h2>
-            <p className="max-w-[700px] text-gray-400 md:text-lg/relaxed">
-              A record of excellence in FIRST Tech Challenge competitions.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="flex flex-col space-y-2 border border-gray-800 p-6 rounded-lg">
-              <div className="flex items-center space-x-2">
-                <Trophy className="h-5 w-5 text-[#7500ff]" />
-                <h3 className="text-xl font-bold">Regional Champions</h3>
-              </div>
-              <p className="text-sm text-gray-400">2023 Colorado FTC Regional Championship</p>
-              <div className="flex items-center text-xs text-gray-500">
-                <Calendar className="mr-1 h-4 w-4" />
-                <span>February 2023</span>
-              </div>
-            </div>
-
-            <div className="flex flex-col space-y-2 border border-gray-800 p-6 rounded-lg">
-              <div className="flex items-center space-x-2">
-                <Award className="h-5 w-5 text-[#7500ff]" />
-                <h3 className="text-xl font-bold">Think Award</h3>
-              </div>
-              <p className="text-sm text-gray-400">For outstanding engineering documentation and team process</p>
-              <div className="flex items-center text-xs text-gray-500">
-                <Calendar className="mr-1 h-4 w-4" />
-                <span>January 2023</span>
-              </div>
-            </div>
-
-            <div className="flex flex-col space-y-2 border border-gray-800 p-6 rounded-lg">
-              <div className="flex items-center space-x-2">
-                <Trophy className="h-5 w-5 text-[#7500ff]" />
-                <h3 className="text-xl font-bold">Semi-Finalists</h3>
-              </div>
-              <p className="text-sm text-gray-400">2022 FIRST Tech Challenge World Championship</p>
-              <div className="flex items-center text-xs text-gray-500">
-                <Calendar className="mr-1 h-4 w-4" />
-                <span>April 2022</span>
-              </div>
-            </div>
-
-            <div className="flex flex-col space-y-2 border border-gray-800 p-6 rounded-lg">
-              <div className="flex items-center space-x-2">
-                <Award className="h-5 w-5 text-[#7500ff]" />
-                <h3 className="text-xl font-bold">Inspire Award</h3>
-              </div>
-              <p className="text-sm text-gray-400">The highest honor given to a team embodying the FIRST spirit</p>
-              <div className="flex items-center text-xs text-gray-500">
-                <Calendar className="mr-1 h-4 w-4" />
-                <span>March 2022</span>
-              </div>
-            </div>
-
-            <div className="flex flex-col space-y-2 border border-gray-800 p-6 rounded-lg">
-              <div className="flex items-center space-x-2">
-                <Trophy className="h-5 w-5 text-[#7500ff]" />
-                <h3 className="text-xl font-bold">Regional Champions</h3>
-              </div>
-              <p className="text-sm text-gray-400">2022 Colorado FTC Regional Championship</p>
-              <div className="flex items-center text-xs text-gray-500">
-                <Calendar className="mr-1 h-4 w-4" />
-                <span>February 2022</span>
-              </div>
-            </div>
-
-            <div className="flex flex-col space-y-2 border border-gray-800 p-6 rounded-lg">
-              <div className="flex items-center space-x-2">
-                <Award className="h-5 w-5 text-[#7500ff]" />
-                <h3 className="text-xl font-bold">Design Award</h3>
-              </div>
-              <p className="text-sm text-gray-400">For innovative robot design and engineering excellence</p>
-              <div className="flex items-center text-xs text-gray-500">
-                <Calendar className="mr-1 h-4 w-4" />
-                <span>January 2022</span>
               </div>
             </div>
           </div>
