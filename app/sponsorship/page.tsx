@@ -65,7 +65,7 @@ export default function SponsorshipPage() {
                   <Check className="h-5 w-5 text-[#7500ff] mt-0.5" />
                   <span className="text-gray-500">
                     <strong className="font-medium text-gray-900">Tax Benefits:</strong> All donations are
-                    tax-deductible through our school's 501(c)(3) status
+                    tax-deductible through our 501(c)(3) status through Hack Club
                   </span>
                 </li>
                 <li className="flex items-start space-x-2">
