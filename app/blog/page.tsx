@@ -35,15 +35,6 @@ export default function BlogPage() {
     },
     {
       id: 4,
-      title: "New Sponsorship Announcement",
-      excerpt: "We're excited to announce our new partnership with TechCorp Industries.",
-      date: "January 25, 2024",
-      readTime: "3 min read",
-      category: "Sponsorships",
-      image: "/placeholder.svg?height=200&width=400",
-    },
-    {
-      id: 5,
       title: "Raising Money for charity 'Oceana'",
       excerpt: "Our outreach team sold 3D printed items and fundraised AU$250 for the charity Oceana.",
       date: "October 24, 2024",
@@ -52,7 +43,7 @@ export default function BlogPage() {
       image: "/placeholder.svg?height=200&width=400",
     },
     {
-      id: 6,
+      id: 5,
       title: "Community Outreach: Jacaranda Festival",
       excerpt: "Team Centaurus held a workshop at Brisbane's yearly Jacaranda Festival.",
       date: "Ocotober 24, 2024",
