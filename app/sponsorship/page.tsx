@@ -297,22 +297,6 @@ export default function SponsorshipPage() {
               We're grateful for the support of these organizations who make our work possible.
             </p>
           </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-              <div
-                key={i}
-                className="p-4 bg-white rounded-lg border border-gray-200 w-full max-w-[200px] h-[100px] flex items-center justify-center"
-              >
-                <Image
-                  src="/placeholder-logo.svg"
-                  alt={`Sponsor ${i}`}
-                  width={120}
-                  height={60}
-                  className="max-h-[60px] w-auto object-contain"
-                />
-              </div>
-            ))}
           </div>
         </div>
       </section>
