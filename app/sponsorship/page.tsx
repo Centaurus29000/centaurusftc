@@ -171,7 +171,7 @@ export default function SponsorshipPage() {
             <div className="flex flex-col p-6 bg-white rounded-lg border border-gray-200 shadow-sm">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-2xl font-bold">Bronze</h3>
-                <span className="text-xl font-bold">$500+</span>
+                <span className="text-xl font-bold">$250+</span>
               </div>
               <ul className="space-y-2 mb-6 flex-1">
                 <li className="flex items-start space-x-2">
@@ -200,7 +200,7 @@ export default function SponsorshipPage() {
             <div className="flex flex-col p-6 bg-white rounded-lg border border-gray-200 shadow-sm">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-2xl font-bold">Silver</h3>
-                <span className="text-xl font-bold">$1,000+</span>
+                <span className="text-xl font-bold">$500+</span>
               </div>
               <ul className="space-y-2 mb-6 flex-1">
                 <li className="flex items-start space-x-2">
@@ -227,12 +227,9 @@ export default function SponsorshipPage() {
 
             {/* Gold Tier */}
             <div className="flex flex-col p-6 bg-white rounded-lg border-2 border-[#7500ff] shadow-lg relative">
-              <div className="absolute -top-3 right-4 bg-[#7500ff] text-white text-xs px-2 py-1 rounded">
-                Most Popular
-              </div>
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-2xl font-bold">Gold</h3>
-                <span className="text-xl font-bold">$2,500+</span>
+                <span className="text-xl font-bold">$1000+</span>
               </div>
               <ul className="space-y-2 mb-6 flex-1">
                 <li className="flex items-start space-x-2">
@@ -265,7 +262,7 @@ export default function SponsorshipPage() {
           <div className="mt-12 p-6 bg-gray-50 rounded-lg border border-gray-200">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div>
-                <h3 className="text-xl font-bold">Platinum Sponsor - $5,000+</h3>
+                <h3 className="text-xl font-bold">Platinum Sponsor - $2500+</h3>
                 <p className="text-gray-500">
                   For our premium sponsors, we offer custom partnership packages with maximum visibility and engagement.
                 </p>
@@ -332,7 +329,7 @@ export default function SponsorshipPage() {
               </p>
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-[#7500ff]" />
-                <span>sponsorship@centaurusrobotics.com</span>
+                <span>centaurus29000@outlook.com</span>
               </div>
             </div>
             <div className="space-y-4">
@@ -376,10 +373,10 @@ export default function SponsorshipPage() {
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-black border-gray-700"
                   >
                     <option value="">Select a level</option>
-                    <option value="bronze">Bronze ($500+)</option>
-                    <option value="silver">Silver ($1,000+)</option>
-                    <option value="gold">Gold ($2,500+)</option>
-                    <option value="platinum">Platinum ($5,000+)</option>
+                    <option value="bronze">Bronze ($250+)</option>
+                    <option value="silver">Silver ($500+)</option>
+                    <option value="gold">Gold ($1000+)</option>
+                    <option value="platinum">Platinum ($2500+)</option>
                     <option value="custom">Custom/In-kind</option>
                   </select>
                 </div>
