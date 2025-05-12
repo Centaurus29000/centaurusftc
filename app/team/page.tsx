@@ -23,9 +23,9 @@ export default function TeamPage() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
               <p className="text-gray-500 md:text-lg/relaxed">
-                Team Centaurus was founded in 2015 with a mission to inspire students to pursue STEM fields through
-                competitive robotics. What started as a small group of enthusiastic students has grown into a formidable
-                team with multiple regional championships.
+                Team Centaurus was founded in 2026 with a mission to inspire students to pursue STEM fields through
+                competitive robotics. We are a small passionate group of students driven by our drive for competitiveness 
+                in the FIRST community.
               </p>
               <p className="text-gray-500 md:text-lg/relaxed">
                 Our team members develop skills in mechanical engineering, programming, electrical engineering, CAD
