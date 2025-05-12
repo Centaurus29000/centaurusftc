@@ -13,7 +13,7 @@ export default function BlogPage() {
       date: "September 20, 2024",
       readTime: "5 min read",
       category: "Competitions",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/regionals.jpg?height=200&width=400",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export default function BlogPage() {
       date: "September 12, 2024",
       readTime: "4 min read",
       category: "Team Events",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/School.jpg?height=200&width=400",
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ export default function BlogPage() {
       date: "Ocotober 24, 2024",
       readTime: "6 min read",
       category: "Outreach",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/Jacaranda.jpg?height=200&width=400",
     },
   ]
 
