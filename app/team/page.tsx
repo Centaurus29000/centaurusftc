@@ -90,7 +90,7 @@ export default function TeamPage() {
                   <div key={i} className="flex flex-col items-center space-y-2">
                     <div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-gray-200">
   <Image
-    src={`/placeholder.svg?height=128&width=128`}
+    src={`/sahur.jpg?height=128&width=128`}
     alt={member.name}
     width={128} // Explicit width
     height={128} // Explicit height
@@ -129,7 +129,7 @@ export default function TeamPage() {
                   <div key={i} className="flex flex-col items-center space-y-2">
                     <div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-gray-200">
   <Image
-    src={`/placeholder.svg?height=128&width=128`}
+    src={`/sahur.jpg?height=128&width=128`}
     alt={member.name}
     width={128} // Explicit width
     height={128} // Explicit height
@@ -163,7 +163,7 @@ export default function TeamPage() {
                   <div key={i} className="flex flex-col items-center space-y-2">
                     <div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-gray-200">
   <Image
-    src={`/placeholder.svg?height=128&width=128`}
+    src={`/sahur.jpg?height=128&width=128`}
     alt={mentor.name}
     width={128} // Explicit width
     height={128} // Explicit height
