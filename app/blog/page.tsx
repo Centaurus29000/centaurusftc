@@ -130,42 +130,42 @@ export default function BlogPage() {
           </div>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {blogPosts.slice(1).map((post) => (
-              <div key={post.id} className="group relative overflow-hidden rounded-lg border bg-white">
-                <div className="aspect-video overflow-hidden">
-                  <Image
-                    src={post.image || "/placeholder.svg"}
-                    alt={post.title}
-                    width={400}
-                    height={200}
-                    className="object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-4">
-                  <div className="flex items-center space-x-2 text-sm text-gray-500 mb-2">
-                    <span className="inline-block px-2 py-0.5 bg-[#7500ff]/10 text-[#7500ff] rounded-full text-xs">
-                      {post.category}
-                    </span>
-                    <div className="flex items-center">
-                      <Calendar className="mr-1 h-3 w-3" />
-                      <span className="text-xs">{post.date}</span>
-                    </div>
-                  </div>
-
-                  <h3 className="text-xl font-bold">{post.title}</h3>
-                  <p className="text-sm text-gray-500 mt-2">{post.excerpt}</p>
-                  <div className="mt-4">
-                    <Link
-                      href={`/blog/${post.id}`}
-                      className="inline-flex items-center text-sm font-medium text-[#7500ff]"
-                    >
-                      Read more <ChevronRight className="ml-1 h-4 w-4" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
+  {blogPosts.slice(1).map((post) => (
+    <div key={post.id} className="group relative overflow-hidden rounded-lg border bg-white">
+      <div className="flex justify-center items-center aspect-video overflow-hidden">
+        <Image
+          src={post.image || "/placeholder.svg"}
+          alt={post.title}
+          width={400}
+          height={200}
+          className="object-cover transition-transform group-hover:scale-105"
+        />
+      </div>
+      <div className="p-4">
+        <div className="flex items-center space-x-2 text-sm text-gray-500 mb-2">
+          <span className="inline-block px-2 py-0.5 bg-[#7500ff]/10 text-[#7500ff] rounded-full text-xs">
+            {post.category}
+          </span>
+          <div className="flex items-center">
+            <Calendar className="mr-1 h-3 w-3" />
+            <span className="text-xs">{post.date}</span>
           </div>
+        </div>
+
+        <h3 className="text-xl font-bold">{post.title}</h3>
+        <p className="text-sm text-gray-500 mt-2">{post.excerpt}</p>
+        <div className="mt-4">
+          <Link
+            href={`/blog/${post.id}`}
+            className="inline-flex items-center text-sm font-medium text-[#7500ff]"
+          >
+            Read more <ChevronRight className="ml-1 h-4 w-4" />
+          </Link>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
 
           <div className="flex justify-center mt-10">
             <Button variant="outline" className="border-[#7500ff] text-[#7500ff] hover:bg-[#7500ff]/10">
