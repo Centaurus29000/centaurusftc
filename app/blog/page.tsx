@@ -133,14 +133,13 @@ export default function BlogPage() {
   {blogPosts.slice(1).map((post) => (
     <div key={post.id} className="group relative overflow-hidden rounded-lg border bg-white">
       <div className="flex justify-center items-center aspect-video overflow-hidden">
-  <Image
-    src={article.image || "/placeholder.svg"}
-    alt={article.title}
-    width={400}
-    height={200}
-    className="w-full h-full object-cover transition-transform group-hover:scale-105"
-  />
-</div>
+        <Image
+          src={post.image || "/placeholder.svg"} // Fixed from `article.image` to `post.image`
+          alt={post.title} // Fixed from `article.title` to `post.title`
+          width={400}
+          height={200}
+          className="w-full h-full object-cover transition-transform group-hover:scale-105"
+        />
       </div>
       <div className="p-4">
         <div className="flex items-center space-x-2 text-sm text-gray-500 mb-2">
