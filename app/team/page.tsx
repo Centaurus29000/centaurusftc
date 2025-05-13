@@ -36,7 +36,7 @@ export default function TeamPage() {
             <div className="flex items-center justify-center">
               <div className="relative w-full max-w-md h-auto">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/robot1.png?height=400&width=600"
                   alt="Team Centaurus group photo"
                   width={600}
                   height={400}
