@@ -136,7 +136,7 @@ export default function BlogPage() {
         <Image
           src={post.image || "/placeholder.svg"}
           alt={post.title}
-          width={400}
+          width={500}
           height={200}
           className="object-cover transition-transform group-hover:scale-105"
         />
