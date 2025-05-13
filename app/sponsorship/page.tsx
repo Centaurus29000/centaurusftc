@@ -71,7 +71,7 @@ export default function SponsorshipPage() {
               </ul>
             </div>
             <div className="flex items-center justify-center">
-              <div className="relative w-full h-[300px] md:h-[400px]">
+              <div className="relative w-full h-[400] md:h-[600]">
                 <Image
                   src="/sponsoronteam.png?height=400&width=600"
                   alt="Team Centaurus with sponsors"
@@ -137,7 +137,7 @@ export default function SponsorshipPage() {
           </div>
 
           <div className="mt-12 flex justify-center">
-            <div className="relative w-full max-w-3xl h-[800px]">
+            <div className="relative w-full max-w-3xl h-[300px]">
               <Image
                 src="/budget2.png?height=800&width=1300"
                 alt="Budget allocation chart"
