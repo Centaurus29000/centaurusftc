@@ -133,7 +133,6 @@ export default function BlogPage() {
   {blogPosts.slice(1).map((post) => (
     <div key={post.id} className="group relative overflow-hidden rounded-lg border bg-white">
       <div className="flex justify-center items-center aspect-video overflow-hidden">
-        <div className="flex justify-center items-center aspect-video overflow-hidden">
   <Image
     src={article.image || "/placeholder.svg"}
     alt={article.title}
