@@ -22,6 +22,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "8 min read",
     category: "Engineering",
     image: "/Blackjack.png?height=200&width=400",
+    image: "/Blackjack.png?height=200&width=400",
     author: "Bilal Chaudhary",
   },
   {
