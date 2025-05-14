@@ -273,7 +273,7 @@ export default function SponsorshipPage() {
             </p>
             <div className="mt-4">
   <Link
-    href="/Sponsorship-Packet.pdf"
+    href="/Sponsorship Package Updated.pdf"
     download
     className="inline-flex items-center text-[#7500ff]"
   >
