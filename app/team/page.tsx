@@ -25,7 +25,8 @@ export default function TeamPage() {
               <p className="text-gray-500 md:text-lg/relaxed">
                 Team Centaurus was founded in 2025 with a mission to inspire students to pursue STEM fields through
                 competitive robotics. The team is a small group of dedicated and motivated in robotics, with a drive
-                to be extremely competitive in the world of FTC Robotics.
+                to be extremely competitive in the world of FTC Robotics. Our team is a merger between FTC teams 18500,
+                23332 and 23335, a selection of highly capable students from the Brisbane area.
               </p>
               <p className="text-gray-500 md:text-lg/relaxed">
                 Our team members develop skills in mechanical engineering, programming, electrical engineering, CAD
@@ -112,7 +113,7 @@ export default function TeamPage() {
             {/* Team Members */}
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-center">Team Members</h3>
-              <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-center">
+              <div className="grid gap-8 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 justify-center items-center">
                 {[
                   {
                     name: "Hugo Lawler",
@@ -154,7 +155,7 @@ export default function TeamPage() {
             {/* Mentors & Coaches */}
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-center">Mentors & Coaches</h3>
-              <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 justify-center items-center">
+              <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 justify-center items-center">
                 {[
                   {
                     name: "Joshua Waghorn",

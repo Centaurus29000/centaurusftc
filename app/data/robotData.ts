@@ -1,6 +1,7 @@
 export interface Robot {
   id: string;
   name: string;
+  team: string;
   description: string;
   image: string;
   features: string[];
@@ -13,6 +14,7 @@ export const robots: Robot[] = [
     id: "1",
     name: "Regs (October 2023)",
     description: "Our robot for the Centerstage Regionals competition. Earned us the Motivate Award.",
+    team: "23335",
     image: "/CW1.png?height=200&width=300",
     features: [
       "Mecanum wheel drive system",
@@ -24,8 +26,23 @@ export const robots: Robot[] = [
   },
   {
     id: "2",
+    name: "Liabilities (October 2023)",
+    description: "Rookie robot for the Centerstage Regionals competition.",
+    team: "23332",
+    image: "/Liabot.png?height=200&width=300",
+    features: [
+      "Mecanum wheel drive system",
+      "Custom intake mechanism",
+      "Autonomous scoring capabilities",
+    ],
+    buildSeason: "September 2023 - October 2023",
+    status: "past",
+  },
+  {
+    id: "3",
     name: "SEPv1 (December 2023)",
     description: "Our robot for the Centerstage national competition. Nationals Judges award winner.",
+    team: "23335",
     image: "/CW2.png?height=200&width=300",
     features: [
       "Advanced control system",
@@ -36,8 +53,9 @@ export const robots: Robot[] = [
     status: "past",
   },
   {
-    id: "3",
+    id: "4",
     name: "SEPv2A1 (APOC 2024)",
+    team: "23335",
     description: "Our robot for the Centrestage APOC challenge. Earned us the design award.",
     image: "/CW3.png?height=200&width=300",
     features: [
@@ -49,16 +67,45 @@ export const robots: Robot[] = [
     status: "past",
   },
   {
-    id: "4",
-    name: "Current Robot (2025)",
-    description: "Our latest robot for the upcoming competition season. Designed for maximum efficiency.",
+    id: "5",
+    name: "John Doe (APOC 2023)",
+    description: "Incognito (23332's) final compeitition robot. Featuring 6 feet of extension.",
+    team: "23332",
+    image: "/IncogBot.png?height=200&width=300",
+    features: [
+      "Mecanum wheel drive system",
+      "Custom intake mechanism",
+      "Autonomous scoring capabilities",
+    ],
+    buildSeason: "December 2023 - July 2024",
+    status: "past",
+  },
+  {
+    id: "6",
+    name: "Blackjack (2024)",
+    team: "23335",
+    description: "Former ACE Robotics robot for the Into The Deep challenge.",
     image: "/Blackjack.png?height=200&width=300",
     features: [
       "State-of-the-art control system",
       "High-speed intake and scoring",
       "Advanced autonomous capabilities",
     ],
-    buildSeason: "April 2025 - Present",
-    status: "current", // Mark this as the current robot
+    buildSeason: "September 2024 - December 2024",
+    status: "past", // Mark this as the current robot
+  },
+  {
+    id: "7",
+    name: "Chiron Concept Bot (2025)",
+    description: "Showcase CAD robot for team Centaurus",
+    team: "29000",
+    image: "/robot1.png",
+    features: [
+      "Mecanum wheel drive system",
+      "Custom intake mechanism",
+      "Autonomous scoring capabilities",
+    ],
+    buildSeason: "September 2023 - October 2023",
+    status: "current",
   },
 ];

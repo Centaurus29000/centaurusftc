@@ -117,20 +117,22 @@ export default function Home() {
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) // Sort by date (newest first)
         .slice(0, 3) // Take the latest 3 posts
         .map((post) => (
-          <div
+          <Link
             key={post.id}
-            className="group relative overflow-hidden rounded-lg border border-gray-800 bg-[#1a1a1a] h-[400px]"
+            href={`/blog/${post.id}`}
+            className="group relative overflow-hidden rounded-lg border border-gray-800 bg-[#1a1a1a] h-[400px] block"
           >
             {/* Image Section */}
             <div className="aspect-video overflow-hidden flex items-center justify-center">
-              <Image
-                src={post.image}
-                alt={post.title}
-                width={400}
-                height={150}
-                className="object-cover transition-transform group-hover:scale-105"
-              />
-            </div>
+    <Image
+      src={post.image}
+      alt={post.title}
+      width={400}
+      height={150}
+      className="object-cover transition-transform group-hover:scale-105"
+    />
+  </div>
+
 
             {/* Content Section */}
             <div className="p-4 flex flex-col h-full relative z-10">
@@ -141,13 +143,12 @@ export default function Home() {
               </div>
               {/* Read More Section */}
               <div className="mt-16 flex items-center text-sm text-[#7500ff]">
+
                 <FileText className="mr-1 h-4 w-4" />
-                <Link href={`/blog/${post.id}`} className="hover:underline">
-                  Read more
-                </Link>
+                <span className="hover:underline">Read more</span>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
     </div>
     <div className="flex justify-center">

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Check, Mail, Download, Users, Trophy, Rocket, Heart } from "lucide-react"
+import { Check, Mail, Download, Users, Trophy, Rocket, Heart, Phone, MapPin} from "lucide-react"
 
 export default function SponsorshipPage() {
   return (
@@ -310,6 +310,14 @@ export default function SponsorshipPage() {
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-[#7500ff]" />
                 <span>centaurus29000@outlook.com</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone className="h-5 w-5 text-[#7500ff]" />
+                <span>+61 481 429 050</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MapPin className="h-5 w-5 text-[#7500ff]" />
+                <span>Brisbane, Queensland, Australia</span>
               </div>
             </div>
             <div className="space-y-4">

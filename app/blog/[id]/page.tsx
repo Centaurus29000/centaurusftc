@@ -11,7 +11,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="container px-4 md:px-6 py-12">
-      <div className="space-y-6">
+      <div className="mx-auto max-w-3xl space-y-6"> {/* Centered and limited width */}
         <h1 className="text-4xl font-bold">{post.title}</h1>
         <div className="flex items-center space-x-4 text-sm text-gray-500">
           <span>Written by {post.author}</span>
@@ -24,7 +24,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
             <span>{post.readTime}</span>
           </div>
         </div>
-        <div className="relative w-full h-[600px]">
+        <div className="relative w-full h-[400px] md:h-[600px]">
           <Image
             src={post.image}
             alt={post.title}

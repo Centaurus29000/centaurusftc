@@ -82,7 +82,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read",
     category: "Competitions",
     image: "/WIS.png?height=200&width=400",
-    author: "Disath Peduruhewa",
+    author: "Layla Chitoni",
   },
   // Add more blog posts here...
 ];
