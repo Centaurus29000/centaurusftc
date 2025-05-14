@@ -19,7 +19,7 @@ export default function SponsorshipPage() {
                 <Button className="bg-[#7500ff] hover:bg-[#7500ff]/90">View Sponsorship Tiers</Button>
               </Link>
               <Link href="#contact">
-                <Button variant="outline" className="text-white border-white hover:bg-purple/10">
+                <Button variant="outline" className="text-black border-white hover:bg-white/90">
                   Contact Us
                 </Button>
               </Link>
@@ -137,15 +137,15 @@ export default function SponsorshipPage() {
           </div>
 
           <div className="mt-12 flex justify-center">
-            <div className="relative w-full max-w-3xl h-[600px]">
-              <Image
-                src="/budget2.png?height=800&width=1300"
-                alt="Budget allocation chart"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
+  <div className="relative w-full max-w-5xl h-[800px]"> {/* Increased max width and height */}
+    <Image
+      src="/budget2.png?height=800&width=1300"
+      alt="Budget allocation chart"
+      fill
+      className="object-contain"
+    />
+  </div>
+</div>
         </div>
       </section>
 

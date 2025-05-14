@@ -52,7 +52,7 @@ export const robots: Robot[] = [
     id: "4",
     name: "Current Robot (2025)",
     description: "Our latest robot for the upcoming competition season. Designed for maximum efficiency.",
-    image: "/BlackJack.png?height=200&width=300",
+    image: "/Blackjack.png?height=200&width=300",
     features: [
       "State-of-the-art control system",
       "High-speed intake and scoring",
