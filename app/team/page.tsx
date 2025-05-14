@@ -70,30 +70,34 @@ export default function TeamPage() {
                     name: "Bilal Chaudhary",
                     role: "Team Captain",
                     description: "3rd year FTC student. Leads design and team management.",
+                    image:"/Bilal.png"
                   },
                   {
                     name: "Bhavy Garg",
                     role: "Mechanical Lead",
-                    description: "4th year FTC student. Specializes in CAD and design.",
+                    description: "5th year FTC student. Specializes in CAD and design.",
+                    image: "/Bhavy.png"
                   },
                   {
                     name: "Stas Fetisov",
                     role: "Lead Programmer",
                     description: "2nd year FTC student. Expert in Java and control systems.",
+                    image: "/Stas.png"
                   },
                   {
                     name: "Disath Peduruhewa",
                     role: "Lead Outreach",
                     description: "3rd year FIRST student. Focuses on community events and outreach.",
+                    image: "/Disath.png"
                   },
                 ].map((member, i) => (
                   <div key={i} className="flex flex-col items-center space-y-2">
                     <div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-gray-200">
   <Image
-    src={`/sahur.jpg?height=128&width=128`}
+    src={member.image || "/sahur.jpg?height=128&width=128"}
     alt={member.name}
-    width={128} // Explicit width
-    height={128} // Explicit height
+    width={512} // Explicit width
+    height={512} // Explicit height
     className="object-cover"
   />
 </div>
@@ -114,25 +118,28 @@ export default function TeamPage() {
                     name: "Hugo Lawler",
                     role: "Hardware Expert",
                     description: "3rd year FTC student. Specialises in hardware and media design.",
+                    image: "/Hugo.png"
                   },
                   {
                     name: "Nevaan Dias",
                     role: "Wiring Expert",
                     description: "FRC alumni, 4th year FIRST student. Expert in wiring and hardware.",
+                    image: "/Nevaan.png"
                   },
                   {
                     name: "Layla Chitoni",
                     role: "Media Expert",
                     description: "2nd year FTC student, media design expert.",
+                    image:  "/Layla.png"
                   },
                 ].map((member, i) => (
                   <div key={i} className="flex flex-col items-center space-y-2">
                     <div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-gray-200">
   <Image
-    src={`/sahur.jpg?height=128&width=128`}
+    src={member.image || "/sahur.jpg?height=128&width=128"}
     alt={member.name}
-    width={128} // Explicit width
-    height={128} // Explicit height
+    width={512} // Explicit width
+    height={512} // Explicit height
     className="object-cover"
   />
 </div>
@@ -153,20 +160,22 @@ export default function TeamPage() {
                     name: "Joshua Waghorn",
                     role: "Mentor",
                     description: "Alumni from Team Theseus Robotics, specialising in mechanical design.",
+                    image: "Josh.png"
                   },
                   {
                     name: "Aadi Shetty",
                     role: "Mentor",
                     description: "Alumni from Team Hephaestus, specialising in mechanical design",
+                    image: "Aadi.png"
                   },
                 ].map((mentor, i) => (
                   <div key={i} className="flex flex-col items-center space-y-2">
                     <div className="flex items-center justify-center w-32 h-32 overflow-hidden rounded-full bg-gray-200">
   <Image
-    src={`/sahur.jpg?height=128&width=128`}
+    src={mentor.image || "/sahur.jpg?height=128&width=128"}
     alt={mentor.name}
-    width={128} // Explicit width
-    height={128} // Explicit height
+    width={512} // Explicit width
+    height={512} // Explicit height
     className="object-cover"
   />
 </div>
