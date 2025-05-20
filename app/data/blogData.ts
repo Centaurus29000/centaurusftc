@@ -17,7 +17,17 @@ export const blogPosts: BlogPost[] = [
     excerpt: "An in-depth look at the engineering process behind our latest competition robot.",
     content: `As this was our last season at school, we decided to push the limit of what is possible in FIRST Tech Challenge. Through collaboratively designing a brand new robot, we developed Blackjack, the latest and last creation of the ACE Robotics team.
     
-    Blackjack consisted of several complicated components, with multiple degrees of freedom and extension. The intake was made with custom-designed polyurethane wheels, driven by a single motor, one of the most complex mechanical parts of our robot. Additionally, our outtake also consisted of horizontal extension, allowing us to score specimens from both sides. Through this, we created an effective robot for the Into The Deep challenge.`,
+    blackjack consisted of several complicated components, with multiple degrees of freedom and extension. The intake was made with custom-designed polyurethane wheels, driven by a single motor, one of the most complex mechanical parts of our robot. Additionally, our outtake also consisted of horizontal extension, allowing us to score specimens from both sides. Through this, we created an effective robot for the Into The Deep challenge. See below for some cool posters the go further into our robot!`,
+     <div className="flex items-center justify-center">
+              <div className="relative w-full h-[400] md:h-[600]">
+                <Image
+                  src="/sponsoronteam.png?height=400&width=600"
+                  alt="Team Centaurus with sponsors"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
     date: "2024-12-07",
     readTime: "8 min read",
     category: "Engineering",
