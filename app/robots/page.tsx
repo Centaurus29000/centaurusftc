@@ -91,13 +91,12 @@ export default function RobotsPage() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Design Process</h3>
                   <p className="text-gray-500">
-                    Blackjack went through multiple design iterations, starting with CAD models and prototypes. Our
-                    engineering team spent over 500 hours designing, building, and testing to ensure optimal performance.
+                    Chiron is a concept bot on which the backbone of our team is built. It drove forward our team branding, design and motivation. 
                   </p>
                 </div>
 
                 <div className="pt-4">
-                  <Link href="/robots/4">
+                  <Link href={`/robots/${currentRobot.id}`}>
   <button className="bg-[#7500ff] hover:bg-[#7500ff]/90 text-white px-4 py-2 rounded-lg">
     View Technical Documentation
   </button>

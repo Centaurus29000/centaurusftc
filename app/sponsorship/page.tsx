@@ -24,6 +24,11 @@ export default function SponsorshipPage() {
                 </Button>
               </Link>
             </div>
+            <div className="flex flex-col gap-2 min-[400px]:flex-row">
+              <Link href="https://hcb.hackclub.com/donations/start/centaurus-ftc">
+                <Button className="bg-[#7500ff] hover:bg-[#7500ff]/90">Donate Now</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -71,15 +76,15 @@ export default function SponsorshipPage() {
               </ul>
             </div>
             <div className="flex items-center justify-center">
-              <div className="relative w-full h-[400] md:h-[600]">
-                <Image
-                  src="/sponsoronteam.png?height=400&width=600"
-                  alt="Team Centaurus with sponsors"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-            </div>
+  <div className="relative w-full h-[400px] md:h-[400px]">
+    <Image
+      src="/sponsoronteam.png?height=200&width=1000"
+      alt="Team Centaurus with sponsors"
+      fill
+      className="object-cover rounded-lg"
+    />
+  </div>
+</div>
           </div>
         </div>
       </section>

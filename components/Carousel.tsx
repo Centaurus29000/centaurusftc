@@ -50,6 +50,8 @@ export default function Carousel({ robots }: { robots: Robot[] }) {
             className="group relative flex-shrink-0 w-[300px] snap-center overflow-hidden rounded-lg border bg-white"
           >
             <div className="flex justify-center items-center aspect-video overflow-hidden">
+               {/* Team Tag */}
+  
               <Image
                 src={robot.image}
                 alt={robot.name}
@@ -60,6 +62,9 @@ export default function Carousel({ robots }: { robots: Robot[] }) {
             </div>
             <div className="p-4">
               <h3 className="text-xl font-bold">{robot.name}</h3>
+              <span className="absolute top-2 left-2 bg-[#7500ff] text-white text-xs font-semibold px-3 py-1 rounded-lg shadow bg-opacity-50">
+    {robot.team}
+  </span>
               <p className="text-sm text-gray-500 mt-2">{robot.description}</p>
               <div className="mt-4 inline-flex items-center text-sm font-medium text-[#7500ff]">
                 Learn more <ArrowRight className="ml-1 h-4 w-4" />
