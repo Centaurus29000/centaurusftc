@@ -24,11 +24,6 @@ export default function SponsorshipPage() {
                 </Button>
               </Link>
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Link href="https://hcb.hackclub.com/donations/start/centaurus-ftc">
-                <Button className="bg-[#7500ff] hover:bg-[#7500ff]/90">Donate Now</Button>
-              </Link>
-            </div>
           </div>
         </div>
       </section>

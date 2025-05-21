@@ -26,9 +26,9 @@ export default function Home() {
                     Meet Our Team <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
-                <Link href="/sponsorship">
+                <Link href="/Donations">
                   <Button variant="outline" className="text-black border-white hover:bg-white/90">
-                    Become a Sponsor
+                   Donate To Centaurus
                   </Button>
                 </Link>
               </div>
